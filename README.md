@@ -147,6 +147,7 @@ command: ["unitree_go2_autonomy_advance"]
 ```bash
 cd OM1
 docker compose up om1 -d --no-build
+This command starts the OM1 service using Docker Compose without rebuilding images.
 ```
 
 - For unitree_sdk
