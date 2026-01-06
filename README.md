@@ -183,3 +183,8 @@ Please make sure to read the [Contributing Guide](./CONTRIBUTING.md) before maki
 
 This project is licensed under the terms of the MIT License, which is a permissive free software license that allows users to freely use, modify, and distribute the software. The MIT License is a widely used and well-established license that is known for its simplicity and flexibility. By using the MIT License, this project aims to encourage collaboration, modification, and distribution of the software.
 Minor documentation improvement
+## community and support Join our community to get help,report issues,and stay updated with the latest developments:
+: (https://www.openmind.org/)
+-X: https://x.com/openmind_agi
+-Github: https://github.com/OpenmindAGI/OM1
+-Docs: https://docs.openmind.org
