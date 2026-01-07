@@ -1,3 +1,4 @@
+import json
 import importlib
 import inspect
 import logging
@@ -11,7 +12,17 @@ from llm.function_schemas import generate_function_schemas_from_actions
 from providers.io_provider import IOProvider
 
 R = T.TypeVar("R")
+def save_chat_history(messages, file_path="conversation_history.json"):
+    """Saves the conversation messages to a JSON file (Issue #985)"""
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(messages, f, ensure_ascii=False, indent=4)
 
+def load_chat_history(file_path="conversation_history.json"):
+    """Loads the conversation history from a JSON file"""
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 class LLMConfig(BaseModel):
     """
